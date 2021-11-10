@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "CNCShield.h"
+#include "CNCShield.hpp"
 #include "pico/stdlib.h"
 
 #define NO_OF_STEPS               200

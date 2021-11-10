@@ -1,12 +1,14 @@
 # Add headers
 add_library(CNCShield_headers INTERFACE)
-target_include_directories(CNCShield_headers INTERFACE ${CNCSHIELD_LIB_PATH}/include)
+target_include_directories(CNCShield_headers INTERFACE ${CNC_SHIELD_LIB_PATH}/include)
+
+# Add target
+add_library(CNCShield INTERFACE)
 
 # Add sources
-add_library(CNCShield INTERFACE)
 target_sources(CNCShield INTERFACE 
-    ${CNCSHIELD_LIB_PATH}/src/CNCShield.cpp
-    ${CNCSHIELD_LIB_PATH}/src/StepperMotor.cpp
+    ${CNC_SHIELD_LIB_PATH}/src/CNCShield.cpp
     )
 
+# Add dependencies
 target_link_libraries(CNCShield INTERFACE CNCShield_headers pico_stdlib)

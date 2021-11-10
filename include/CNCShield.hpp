@@ -6,8 +6,8 @@
  * Licensed under the MIT license.
  */
 
-#ifndef __CNCSHIELD_H__
-#define __CNCSHIELD_H__
+#ifndef __CNC_SHIELD_HPP__
+#define __CNC_SHIELD_HPP__
 
 typedef enum {
     COUNTER = 0,
@@ -85,4 +85,4 @@ public:
     void            set_speed(motor_id_t motor_id, double speed);
 };
 
-#endif /* __CNCSHIELD_H__ */
+#endif /* __CNC_SHIELD_HPP__ */

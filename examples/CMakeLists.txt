@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 # Pull in CNCSHield library
-include(cncshield_lib_import.cmake)
+include(cnc_shield_lib_import.cmake)
 
 # Check if Debug build
 if (CMAKE_BUILD_TYPE MATCHES Debug)
